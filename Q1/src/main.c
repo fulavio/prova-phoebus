@@ -15,11 +15,15 @@ int main()
 	
 	int i = 0;
 	for(;i < wcslen(str); i++)
-	{printf("%d to %d\n", str[i], L'á');
+	{
 		switch(str[i])
 		{
 			case L'á': str[i] = L'a'; break;
-			default: printf("z");
+			case L'é': str[i] = L'e'; break;
+			case L'í': str[i] = L'i'; break;
+			case L'ó': str[i] = L'o'; break;
+			//todo
+			default: printf("z\n");
 		}
 	}
 	
